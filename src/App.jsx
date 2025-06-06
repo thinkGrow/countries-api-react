@@ -2,9 +2,9 @@ import "./App.css";
 import Countries from "./components/Countries/Countries";
 import { Suspense } from "react";
 
-const countriesPromise = fetch(
-  "https://restcountries.com/v3.1/all?fields=name,capital,population,region,subregion,flags,cca3,currencies,languages,timezones"
-).then((res) => res.json());
+const url =
+  "https://restcountries.com/v3.1/all?fields=name,capital,population,region,subregion,flags,ccn3,independent,languages,timezones";
+const countriesPromise = fetch(url).then((res) => res.json());
 
 function App() {
   return (

@@ -9,7 +9,7 @@ const Countries = ({ countriesPromise }) => {
       <h1>traveling countries: {countries.length}</h1>
 
       {countries.map((country) => (
-        <Country country={country}></Country>
+        <Country key={country.ccn3} country={country}></Country>
       ))}
     </div>
   );
